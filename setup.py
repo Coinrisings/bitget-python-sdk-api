@@ -4,7 +4,7 @@ NAME = "bitget"
 
 setup(
     name="bitget",
-    version="0.0.3",
+    version="0.3.3",
     packages = find_packages(),
     install_requires=['requests', 'websockets']
 )
