@@ -19,4 +19,4 @@ class AccountApi(Client):
         return self._request_with_params(POST, '/api/v3/account/set-hold-mode', params)
 
     def currentPosition(self, params):
-        return self._request_with_params(POST, '/api/v3/position/current-position', params)
+        return self._request_with_params(GET, '/api/v3/position/current-position', params)
