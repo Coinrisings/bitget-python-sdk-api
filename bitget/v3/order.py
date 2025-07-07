@@ -13,7 +13,13 @@ class OrderApi(Client):
     def modifyOrder(self, params):
         return self._request_with_params(POST, '/api/v3/trade/modify-order', params)
 
-    def CancelOrder(self, params):
+    def cancelOrder(self, params):
         return self._request_with_params(POST, '/api/v3/trade/cancel-order', params)
+    
+    def getOrder(self, params):
+        return self._request_with_params(GET, '/api/v3/trade/order-info', params)
+    
+    def closePositions(self, params):
+        return self._request_with_params(POST, '/api/v3/trade/close-positions', params)
 
    
